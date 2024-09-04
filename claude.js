@@ -4,7 +4,7 @@ const CLAUDE_API_KEY = process.env.CLAUDE_API_KEY;
 const AUTH_TOKEN = process.env.AUTH_TOKEN;
 
 module.exports = async (req, res) => {
-  // Enable CORS
+  // Enable CORS for all origins
   res.setHeader('Access-Control-Allow-Credentials', true);
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,POST');
